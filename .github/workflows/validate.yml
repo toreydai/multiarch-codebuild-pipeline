@@ -1,0 +1,22 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate app package
+        working-directory: app
+        run: npm install --omit=dev --package-lock=false
+      - name: Install CDK dependencies
+        run: npm install
+      - name: Build CDK app
+        run: npm run build
+      - name: Synthesize CDK template
+        run: npx cdk synth

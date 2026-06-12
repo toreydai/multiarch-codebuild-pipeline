@@ -1,0 +1,10 @@
+{
+  "name": "multiarch-codebuild-app",
+  "version": "1.0.0",
+  "description": "Minimal Node.js app for multi-architecture container image builds",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "MIT"
+}

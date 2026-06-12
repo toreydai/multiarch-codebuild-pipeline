@@ -1,0 +1,12 @@
+{
+  "app": "npx ts-node --project infra/tsconfig.json --prefer-ts-exts infra/main.ts",
+  "context": {
+    "projectName": "multiarch-codebuild",
+    "pipelineName": "multiarch-codepipeline",
+    "codeCommitRepoName": "multiarch-container-app",
+    "imageRepoName": "multiarch-app",
+    "imageTag": "latest",
+    "platforms": "linux/amd64,linux/arm64",
+    "branch": "main"
+  }
+}
