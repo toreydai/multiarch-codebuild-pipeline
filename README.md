@@ -33,7 +33,7 @@ npx cdk deploy \
   -c platforms=linux/amd64,linux/arm64
 ```
 
-## 结构
+## 目录结构
 
 ```text
 .
@@ -53,7 +53,7 @@ npx cdk deploy \
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT - see the [LICENSE](LICENSE) file for details.
 
 ## 免责声明
 
